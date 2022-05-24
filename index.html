@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/849579ce3c.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+        background-color: gray;
+
+
+    }
+
+    header {
+        background-color: #252525;
+ 
+
+    }
+
+    .logo1 {
+        font-size: 26px;
+        position: relative;
+        color: whitesmoke;
+        margin: auto 100px;
+        padding: 10px;
+
+    }
+
+    .container {
+        background-color: #303030;
+        overflow: hidden;
+    }
+
+    a {
+        float: left;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 10px;
+        margin-left: 100px;
+        position: relative;
+        list-style: none;
+
+    }
+
+    /*animação do menu*/
+    nav a::after {
+        content: " ";
+        width: 0%;
+        height: 4px;
+        background-color: #049c0c;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        transition: 0.2s ease-in-out;
+    }
+
+    nav a:hover::after {
+        width: 100%;
+
+    }
+
+
+
+    /*conteudo principal*/
+    img {
+        width: 45px;
+        position: fixed;
+        display: inline;
+        left: 80%;
+        bottom: 0;
+
+
+    }
+
+    /*rodapé*/
+    .footer {
+        position: absolute;
+        bottom: 0;
+        background-color: #252525;
+        color: #FFF;
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+
+    }
+
+    .rodape {
+        color: white;
+        font-size: 13px;
+        position: relative;
+        display: inline;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /*------------------------------------------------*/
+    @media screen and (  max-width:500px){
+    
+
+    body {
+        background-color: gray;
+        font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+
+    }
+
+    header {
+        background-color: #252525;
+ 
+
+    }
+
+    .logo1 {
+        font-size: 20px;
+        color: whitesmoke;
+        margin: auto;
+        padding: 4px;
+        text-align: center;
+
+    }
+
+    .container {
+        background-color: #303030;
+        margin: 2px;
+        
+    }
+
+    a {
+       
+        color: whitesmoke;
+        text-decoration: none;
+        margin: 10px;
+        list-style: none;
+        font-size: 20px;
+       left: 20px;
+        
+    }
+
+    /*animação do menu*/
+  
+
+  a:hover{
+      background-color: #049c0c;
+
+    }
+
+    main{
+        color: #FFF;
+        text-align: center;
+        top: 50px;
+        position: relative;
+    }
+
+    
+
+    
+
+    /*rodapé*/
+    .footer {
+        position: absolute;
+        bottom: 0;
+        background-color: #252525;
+        color: #FFF;
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+
+    }
+
+    .rodape {
+        color: white;
+        font-size: 13px;
+        position: relative;
+        display: inline;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    }
+    
+</style>
+
+<body>
+    <header>
+        <h2 class="logo1">1A INFORMÁTICA AVANÇADA >_</h2>
+        <nav class="container">
+            <ul>
+                <a href="">
+                    <li>Inicio</li>
+                </a>
+                <a href="">
+                    <li>Serviços</li>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=55989914631666&text=Preciso%20de%20Suporte!!">
+                    <li>Helpdesk</li>
+                </a>
+                <a href="">
+                    <li>Sobre</li>
+                </a>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+<h1>AINDA PRECISO COLOCAR AS ANIMAÇÕES AQUI NO CENTRO, MAS VAI FICAR PARA DEPOIS</h1>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <p class="rodape">1A INFORMÁTICA AVANÇADA</p>
+            
+        </div>
+
+    </footer>
+</body>
+
+</html>
