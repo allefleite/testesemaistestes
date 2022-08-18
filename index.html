@@ -1,226 +1,215 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <script src="https://kit.fontawesome.com/849579ce3c.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página do Suporte</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>1A Soluções Tecnológicas</title>    
+    <!-- JavaScript Bundle with Popper -->
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    }
-
-    body {
-        background-color: gray;
+    *{
+    margin: 0;
+}
 
 
-    }
-
-    header {
-        background-color: #252525;
- 
-
-    }
-
-    .logo1 {
-        font-size: 26px;
+    .img-logo{
         position: relative;
-        color: whitesmoke;
-        margin: auto 100px;
-        padding: 10px;
-
+        display: flex;
+        left: 10%;    
+        width: 250px;
+        height: 250px;
     }
 
-    .container {
-        background-color: #303030;
-        overflow: hidden;
-    }
-
-    a {
-        float: left;
-        color: whitesmoke;
+    .cont-nav{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 19px;    
         text-decoration: none;
-        padding: 10px;
-        margin-left: 100px;
-        position: relative;
-        list-style: none;
-        font-size:20px;
-    }
-
-    /*animação do menu*/
-    nav a::after {
-        content: " ";
-        width: 0%;
-        height: 4px;
-        background-color: #049c0c;
-        position: absolute;
-        bottom: 5px;
-        left: 0;
-        transition: 0.2s ease-in-out;
-    }
-
-    nav a:hover::after {
-        width: 100%;
-
-    }
-
-
-
-    /*conteudo principal*/
-    img {
-        width: 45px;
-        position: fixed;
-        display: inline;
-        left: 80%;
-        bottom: 0;
-
-
-    }
-
-    /*rodapé*/
-    .footer {
-        position: absolute;
-        bottom: 0;
-        background-color: #252525;
-        color: #FFF;
-        width: 100%;
-        text-align: center;
-        line-height: 100px;
-
-    }
-
-    .rodape {
-        color: white;
-        font-size: 13px;
-        position: relative;
-        display: inline;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    /*------------------------------------------------*/
-    @media screen and (  max-width:500px){
-    
-
-    body {
-        background-color: gray;
-        font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-
-    }
-
-    header {
-        background-color: #252525;
- 
-
-    }
-
-    .logo1 {
-        font-size: 20px;
-        color: whitesmoke;
-        margin: auto;
-        padding: 4px;
-        text-align: center;
-
-    }
-
-    .container {
-        background-color: #303030;
-        margin: 2px;
         
     }
-
-    a {
-       
-       
-        color: whitesmoke;
-        text-decoration: none;
-        list-style: none;
-        font-size: 10px;
+    
+   #nav-menu .nav-opt {
+        padding: 20px 40px;
         display: inline;
-        margin: auto;
-        font-size: 10px;
+        position: relative;
+        bottom:100px;
         
-    }
+    } 
+   
+   
+   
+/*Rodapé*/
+#myFooter{
+    padding-top:32px;
+}
 
-    /*animação do menu*/
-  
+#myFooter .container{
+    text-align: center;
+}
 
-  a:hover{
-      background-color: #049c0c;
+#myFooter .footer-copyright{
+    margin-bottom: 35px;
+    text-align: center;
+    color: #777;
+}
 
-    }
+#myFooter .cont-footer{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 18px;
+}
 
-    main{
-        color: #FFF;
-        text-align: center;
-        top: 50px;
-        position: relative;
-    }
+#myFooter .social-icons{
+    color: #282b2d;
+    font-size: 18px;
+}
 
-    
+#myFooter .nav-footer{
+    display: inline-block;
+    margin: 0px 15px;
+    line-height: 2;
+}
 
-    
+#myFooter .footer-social{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #eee;
+}
 
-    /*rodapé*/
-    .footer {
-        position: absolute;
-        bottom: 0;
-        background-color: #252525;
-        color: #FFF;
-        width: 100%;
-        text-align: center;
-        line-height: 100px;
+#myFooter .fa{
+    font-size: 36px;
+    margin-right: 15px;
+    margin-left: 20px;
+    background-color: white;
+    color: #d0d0d0;
+    border-radius: 51%;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 43px;
+    text-decoration: none;
+    transition:color 0.2s;
+}
 
-    }
+#myFooter .fa-facebook:hover{
+   color: #2b55ff;
+}
 
-    .rodape {
-        color: white;
-        font-size: 13px;
-        position: relative;
-        display: inline;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+#myFooter .fa-facebook:focus{
+    color: #2b55ff; 
+}
 
-    }
-    
+#myFooter .fa-instagram:hover{
+    color:purple;
+}
+
+#myFooter .fa-instagram:focus{
+    color:purple;
+}
+
+#myFooter .fa-youtube:hover{
+    color:red;
+}
+
+#myFooter .fa-youtube:focus{
+    color:red;
+}
+
+#myFooter .fa-whatsapp:hover{
+    color: #075E54;
+
+}
+
+#myFooter .fa-twitter:focus{
+    color:#00aced;
+}
+
+
+
+/* CSS utilizado para posicionar o rodapé no final da página. */
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
 </style>
-
+    </head>
+    
 <body>
-    <header>
-        <h2 class="logo1">1A INFORMÁTICA AVANÇADA >_</h2>
-        <nav class="container">
-            <ul>
-                <a href="">
-                    <li>Inicio</li>
-                </a>
-                <a href="">
-                    <li>Serviços</li>
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=55989914631666&text=Preciso%20de%20Suporte!!">
-                    <li>Helpdesk</li>
-                </a>
-                <a href="">
-                    <li>Sobre</li>
-                </a>
-            </ul>
-        </nav>
 
+    
+
+    
+    <header>
+        <div class="cont-head">
+        <img class="img-logo" src="![logo-site](https://user-images.githubusercontent.com/79490119/185489173-4033ec4c-9279-4608-a369-7fb4ebbd6f54.png)" alt="logosite">
+        </div>
     </header>
+    
+    <nav>
+        <div class="cont-nav">
+            <ul id="nav-menu">
+                <li class="nav-opt"><a class="link-menu" href="">Inicio</a></li> 
+                <li class="nav-opt"><a class="link-menu" href="">Serviços</a></li>
+                <li class="nav-opt"><a class="link-menu"  href="">Quem Somos</a></li>
+                <li class="nav-opt"><a class="link-menu"  href="">Contatos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+
     <main>
-<h1>AINDA PRECISO COLOCAR AS ANIMAÇÕES AQUI NO CENTRO, MAS VAI FICAR PARA DEPOIS</h1>
+      <div class="cont-banner">
+      
+      </div>
+    
     </main>
 
-    <footer class="footer">
-        <div>
-            <p class="rodape">1A INFORMÁTICA AVANÇADA</p>
-            
+    <div class="content">
+    </div>
+    <footer id="myFooter">
+        <div class="container">
+            <ul class="cont-footer">
+                <li class="nav-footer"><a href="#">Inicio</a></li>
+                <li class="nav-footer"><a href="#">Contatos</a></li>
+                <li class="nav-footer"><a href="#">Serviços</a></li>
+                <li class="nav-footer"><a href="#">Informações da Empresa</a></li>
+            </ul>
+            <p class="footer-copyright">© 2022 Copyright - 1A Soluções Tecnológicas</p>
         </div>
-
+        <div class="footer-social">
+            <a href="#" class="social-icons"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="social-icons"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="social-icons"><i class="fa fa-youtube"></i></a>
+            <a href="#" class="social-icons"><i class="fa fa-whatsapp"></i></a>
+        </div>
     </footer>
-</body>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </html>
